@@ -1,0 +1,14 @@
+How to set up:
+
+1) Set up ssh hosts by adding a host called `pi` to ~/.ssh/config on your local
+machine. Example (assuming your pi is located at 192.168.1.2):
+
+    Host pi
+        HostName 192.168.1.2
+        User pi
+
+2) Add your ssh key to `~/.ssh/authorized_keys` on the pi
+
+    ssh pi "echo $(cat ~/.ssh/id_rsa.pub) >> ~/.ssh/authorized_keys"
+
+3) All done! run `./setime` to sync clocks
