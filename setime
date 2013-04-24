@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Setting time to "$(date)"..."
+ssh pi "sudo date --set \"$(date)\""
