@@ -1,3 +1,5 @@
+setime - sync two machines' clocks using ssh
+
 How to set up:
 
 1) Set up ssh hosts by adding a host called `pi` to ~/.ssh/config on your local
